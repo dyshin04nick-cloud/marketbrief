@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-bg text-txt antialiased;
+  font-feature-settings: "tnum";
+}
+
+.num { font-variant-numeric: tabular-nums; }
+
+.panel { @apply bg-panel border border-line rounded-xl overflow-hidden; }
+.panel-h { @apply flex items-center justify-between px-4 py-3 border-b border-line; }
+.badge { @apply inline-block text-[10px] font-bold px-1.5 py-0.5 rounded bg-chip text-muted align-middle; }
+.chip { @apply px-3.5 py-1.5 rounded-full text-xs font-semibold border border-line bg-chip text-muted cursor-pointer select-none; }
+.chip-active { @apply bg-accent/20 border-accent text-accent2; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: #253243; border-radius: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+
